@@ -1,0 +1,40 @@
+header li:nth-of-type(2) a {
+    color: #fff;
+    background-color: #008091;
+    border: solid 3px #fff;
+    pointer-events: none;
+}
+
+iframe {
+    display: block;
+    border: solid;
+}
+
+.event {
+    border: solid cyan 5px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.event p {
+    font-size: 1.2em;
+    font-family: calibri;
+}
+.event span{
+    font-family: consolas;
+    font-weight: 900;
+    margin-right: 5px;
+}
+.event h1 {
+    font-family: calibri;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .event iframe {
+        width: 100%;
+    }
+}

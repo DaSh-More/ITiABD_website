@@ -1,0 +1,89 @@
+.card {
+    width: 300px;
+    /* height: 350px; */
+    max-height: 600px;
+    border: solid 5px #fd9732aa;
+    border-radius: 30px;
+    margin: 20px;
+    background-color: #efefef;
+}
+
+.avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid green;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user {
+    padding: 10px;
+}
+
+.name {
+    vertical-align: middle;
+    font-size: 3ch;
+    padding-left: 5px;
+    font-family: consolas;
+    font-weight: bolder;
+    color: rgb(54, 54, 54);
+}
+
+.about {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5ch;
+    font-family: roboto;
+    max-height: 450px;
+    overflow: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 800px;
+        height: 800px;
+        max-height: 1500px;
+    }
+    .name {
+        font-size: 6ch;
+        margin-left: 20px;
+    }
+
+    .about {
+        padding: 50px;
+        font-size: 6ch;
+    }
+
+    main {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+    .user {
+        padding: 30px;
+    }
+}
+
+header li:nth-of-type(1) a {
+    color: #fff;
+    background-color: #008091 ;
+    border: solid 3px #fff;
+    pointer-events: none;
+}
